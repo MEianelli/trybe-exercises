@@ -29,9 +29,7 @@ function piramideVazia(n) {
       continue;
     }
     if (i != n) {
-      console.log(
-        " ".repeat((n - i) / 2) + "*".repeat(1) + " ".repeat(i - 2) + "*".repeat(1) + " ".repeat((n - i) / 2)
-      );
+      console.log(" ".repeat((n - i) / 2) + "*".repeat(1) + " ".repeat(i - 2) + "*".repeat(1) + " ".repeat((n - i) / 2));
     } else {
       console.log(" ".repeat((n - i) / 2) + "*".repeat(i) + " ".repeat((n - i) / 2));
     }
@@ -130,13 +128,7 @@ function checaDiagInfEsquerda(pr, pp, n) {
 }
 
 function rainha(pr, pp, n) {
-  if (
-    mesmaLinhaOuColuna(pr, pp, n) ||
-    checaDiagSupEsquerda(pr, pp, n) ||
-    checaDiagSupDireita(pr, pp, n) ||
-    checaDiagInfDireita(pr, pp, n) ||
-    checaDiagInfEsquerda(pr, pp, n)
-  ) {
+  if (mesmaLinhaOuColuna(pr, pp, n) || checaDiagSupEsquerda(pr, pp, n) || checaDiagSupDireita(pr, pp, n) || checaDiagInfDireita(pr, pp, n) || checaDiagInfEsquerda(pr, pp, n)) {
     console.log("Movimento valido");
   } else {
     console.log("movimento  invalido");
