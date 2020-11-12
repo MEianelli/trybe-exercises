@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" method="GET">
+      <fieldset>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="nome" placeholder="Nome Completo" maxlength="40" required />
+        <label for="email">e-mail</label>
+        <input type="email" id="email" name="email" placeholder="email" maxlength="50" required />
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="11" required />
+        <label for="endereco">Endereco</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Endereco" maxlength="200" required />
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Cidade" maxlength="28" required />
+        <label for="estados">UF</label>
+        <select id="estados" name="estados" required></select>
+
+        <input class="radio" type="radio" id="casa" name="moradia" value="Casa" required />
+        <label for="casa">Casa</label>
+
+        <input class="radio" type="radio" id="apartamento" name="moradia" value="Apartamento" required />
+        <label for="apartamento">Apartamento</label>
+      </fieldset>
+      <fieldset>
+        <label for="resumoCV">Resumo do currículo</label>
+        <textarea name="resumoCV" id="resumoCV" maxlength="1000" required></textarea>
+
+        <label for="cargo">Cargo</label>
+        <input type="text" id="cargo" name="cargo" placeholder="Cargo" maxlength="40" required />
+
+        <label for="descricaoCargo">Descrição do cargo</label>
+        <input type="text" id="descricaoCargo" name="descricaoCargo" placeholder="Descrição do cargo" maxlength="500" required />
+
+        <label for="dataInicio">Data de Inicio</label>
+        <input type="date" id="dataInicio" name="dataInicio" required />
+      </fieldset>
+      <button id="montarCV" type="submit">Montar CV</button>
+    </form>
+    <button id="limparDados">Limpar</button>
+    <div id="resume"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
