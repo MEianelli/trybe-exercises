@@ -48,6 +48,7 @@ function montaCV() {
 
   let divResume = document.querySelector("#resume");
   divResume.innerHTML = "";
+  divResume.style.display = "block";
 
   dados.forEach((e) => {
     let p = document.createElement("p");
@@ -68,9 +69,12 @@ function limparDados() {
 
   let divResume = document.querySelector("#resume");
   divResume.innerHTML = "";
+  divResume.style.display = "none";
 
   dados.forEach((e) => {
-    e.value = "";
+    if (e !== moradia) {
+      e.value = "";
+    }
   });
 }
 

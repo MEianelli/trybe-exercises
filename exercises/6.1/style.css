@@ -1,4 +1,7 @@
 body {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 10px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 * {
@@ -49,8 +52,9 @@ input[type="radio"]:checked + label {
   width: 450px;
   color: white;
   box-shadow: 3px 3px black;
-  margin: 10px 10px;
+  margin: 10px 0px;
   padding: 10px 10px;
+  display: none;
 }
 
 .resumeP {
@@ -64,4 +68,19 @@ input[type="radio"]:checked + label {
   font-style: normal;
   text-shadow: none;
   font-size: 0.8em;
+}
+
+button {
+  background-color: #0ab6a9;
+  color: white;
+  box-shadow: 3px 3px black;
+  outline: none;
+  border: 0;
+  font-size: 1.1em;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: lightgreen;
 }
