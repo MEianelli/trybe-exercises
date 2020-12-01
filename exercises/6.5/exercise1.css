@@ -1,0 +1,21 @@
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+@media screen and (max-width: 568px) {
+  body {
+    align-items: baseline;
+    font-size: larger;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  figure {
+    margin: 20px 0;
+  }
+}
