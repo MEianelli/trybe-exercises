@@ -20,7 +20,10 @@ function funcaoBotao() {
   let entrada = document.getElementsByTagName("input")[0];
   entrada.addEventListener("keydown", (e) => {
     if (e.keyCode === 13) {
-      alert(entrada.value);
+      if (localStorage.getItem(entrada.value) === null) {
+        alert("nome nao existe");
+        return;
+      }
       aplicarStyle(entrada.value);
       entrada.value = "";
     }
@@ -37,3 +40,17 @@ function aplicarStyle(string) {
   leitura.style.lineHeight = info["lineHeight"];
   leitura.style.fontFamily = info["fontFamily"];
 }
+
+let novo = {
+  nome: "Pai",
+  corFundo: "red",
+  color: "lightblue",
+  fontSize: "12px",
+  lineHeight: "15px",
+  fontFamily: "Times New Roman",
+};
+
+function adiconarItem(obj) {
+  localStorage.setItem(obj["nome"], JSON.stringify(obj));
+}
+adiconarItem(novo);
