@@ -1,0 +1,35 @@
+input{
+  height: 30px;
+  width: 200px;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 5px;
+  background-color: #515151;
+  color: white;
+  font-size: 12px;
+  border: 1px solid lightgreen;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #515151 inset !important;
+    box-shadow: 0 0 0 30px #515151 inset !important;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
+
+input:active{
+  background-color: #515151;
+  outline: 0;
+}
+
+input:focus{
+  background-color: #515151;
+  outline: 0;
+}
